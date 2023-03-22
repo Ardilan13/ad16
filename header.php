@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <h3>AD16</h3>
+        <h3>&#128153; AD16</h3>
         <i id="gift" class="fa-solid fa-gift fa-xl"></i>
         <!-- <div class="pages">
             <a href="productos.php">Productos</a>

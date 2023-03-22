@@ -14,8 +14,9 @@ $con = conectar(); ?>
                 </div>
                 <div class="input">
                     <label for="calificacion">Calificacion del 1 al 10:</label>
-                    <input type="range" value="5" min="0" max="10" id="calificacion" name="calificacion" oninput="rangevalue.value=value" />
-                    <input disabled type="number" id="rangevalue" value="5" oninput="range.value=value">
+                    <input type="range" value="7" min="0" max="10" id="calificacion" name="calificacion" oninput="rangevalue.value=value" />
+                    <input disabled type="number" id="rangevalue" value="7" oninput="range.value=value">
+                    <span id="emoji">&#128153;</span>
                 </div>
                 <button type="submit">Guardar</button>
             </form>

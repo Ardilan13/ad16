@@ -15,6 +15,16 @@ $("#gift").click(function (e) {
   $(location).prop("href", "img.php");
 });
 
+$("#calificacion").change(function () {
+  if ($(this).val() > 6) {
+    $("#emoji").html("&#128153;");
+  } else if ($(this).val() > 3) {
+    $("#emoji").html("&#128528;");
+  } else {
+    $("#emoji").html("&#128545;");
+  }
+});
+
 $("#rangevalue").mouseover(function (e) {
   e.preventDefault();
 });
