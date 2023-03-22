@@ -43,8 +43,8 @@ $con = conectar(); ?>
                         while ($row = mysqli_fetch_assoc($resultado)) { ?>
                             <tr>
                                 <td><?php echo $row["id"]; ?></td>
-                                <td><?php echo $row["fecha"]; ?></td>
-                                <td><?php echo $row["calificacion"]; ?></td>
+                                <td><?php echo date("d M Y", strtotime($row["fecha"])); ?></td>
+                                <td class="<?php echo $row["calificacion"] < 7 ? ' mala' : ' buena'; ?>"><?php echo $row["calificacion"]; ?></td>
                                 <td><?php echo $row["mensaje"]; ?></td>
                             </tr>
                     <?php }

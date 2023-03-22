@@ -41,4 +41,11 @@
   button:hover {
     background-color: darken(v.$azul, 10);
   }
+
+  .mala {
+    color: red;
+  }
+  .buena {
+    color: v.$azul;
+  }
 }
