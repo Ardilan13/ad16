@@ -10,7 +10,7 @@ $con = conectar(); ?>
             <form id="mensaje">
                 <div class="input">
                     <label for="mensaje">¿Como la pasaste hoy conmigo?</label>
-                    <input type="text" id="mensaje" name="mensaje" required>
+                    <textarea name="mensaje" id="mensaje" minlength="50" rows="5" required></textarea>
                 </div>
                 <div class="input">
                     <label for="calificacion">Calificacion del 1 al 10:</label>
