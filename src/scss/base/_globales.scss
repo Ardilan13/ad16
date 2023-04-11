@@ -119,6 +119,16 @@ input[type="search"] {
   margin-left: 3rem;
 }
 
+select {
+  border-radius: 5px;
+  border: 1.5px solid v.$azul;
+  color: v.$blanco;
+  background-color: v.$negro;
+  border-style: solid;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
 input[type="search"] {
   width: auto;
 }
