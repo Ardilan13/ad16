@@ -77,7 +77,7 @@
 
   form input,
   form textarea {
-    margin-left: 0 !important;
+    margin-left: 1rem !important;
   }
 
   label {
@@ -85,8 +85,8 @@
   }
 
   #rangevalue {
-    width: 15% !important;
-    margin: 0 !important;
+    width: 10% !important;
+    margin-left: 0 !important;
   }
   .normal {
     display: none;
@@ -94,4 +94,20 @@
   .cel {
     display: block !important;
   }
+}
+
+#tabla_previous,
+#tabla_next,
+#tabla_paginate span .paginate_button {
+  color: v.$blanco !important;
+}
+
+#tabla_paginate span .paginate_button.current {
+  background-color: v.$negro !important;
+  border-radius: 5px;
+  border: 1.5px solid v.$azul;
+  color: v.$blanco;
+  background: none !important;
+  background-color: v.$negro !important;
+  border-style: solid;
 }

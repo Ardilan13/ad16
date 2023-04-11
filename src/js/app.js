@@ -1,13 +1,22 @@
 $(document).ready(function () {
-  $("#tabla").DataTable();
+  $("h3").click(function (e) {
+    e.preventDefault();
+    $(location).prop("href", "index.php");
+  });
+  $("#tabla").DataTable({
+    color: "white",
+  });
 
   $("#tabla tr td").css("background-color", "#202c33");
   $("#tabla tr td").css("border", "1px solid white");
   $("#tabla tr").css("border", "1px solid white");
   $(".dataTables_length").css("color", "white");
   $("#tabla_filter").css("color", "white");
-  $("#tabla_previous").css("color", "white");
   $("#tabla_info").css("color", "white");
+  $(".dataTables_wrapper .dataTables_paginate .paginate_button").css(
+    "color",
+    "white !important"
+  );
 });
 
 $("#gift").click(function (e) {
