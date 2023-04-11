@@ -27,12 +27,12 @@ $con = conectar(); ?>
             <p>MENSAJES ANTERIORES</p>
         </div>
         <div class="info">
-            <table id="tabla" class="display" style="width:100%">
+            <table id="tabla" class="table table-bordered display no-wrap" cellspacing="0" style="width:100%">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th class="id">ID</th>
                         <th>Fecha</th>
-                        <th>Calificacion</th>
+                        <th><span class="normal">Calificacion</span><span class="cel">#</span></th>
                         <th>Mensaje</th>
                     </tr>
                 </thead>
@@ -43,7 +43,7 @@ $con = conectar(); ?>
                     if ($resultado->num_rows > 0) {
                         while ($row = mysqli_fetch_assoc($resultado)) { ?>
                             <tr>
-                                <td><?php echo $row["id"]; ?></td>
+                                <td class="id"><?php echo $row["id"]; ?></td>
                                 <td><?php echo date("d M Y", strtotime($row["fecha"])); ?></td>
                                 <td class="<?php echo $row["calificacion"] < 7 ? ' mala' : ' buena'; ?>"><?php echo $row["calificacion"]; ?></td>
                                 <td><?php echo $row["mensaje"]; ?></td>

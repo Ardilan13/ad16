@@ -11,6 +11,7 @@
     width: 4%;
     padding: 0;
     border: none;
+    text-align: center;
   }
 
   button {
@@ -27,8 +28,14 @@
 }
 
 #tabla {
-  background-color: v.$negro;
-  color: v.$blanco;
+  background-color: v.$negro !important;
+  color: v.$blanco !important;
+
+  td {
+    background-color: v.$negro !important;
+    color: v.$blanco !important;
+    border: 1px solid white !important;
+  }
 
   button {
     background-color: v.$azul;
@@ -47,5 +54,44 @@
   }
   .buena {
     color: v.$azul;
+  }
+  .cel {
+    display: none;
+  }
+}
+
+@include m.telefono {
+  body {
+    font-size: 1rem;
+    color: v.$blanco !important;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .id {
+    display: none;
+  }
+  .info {
+    padding: 0.5rem !important;
+  }
+
+  form input,
+  form textarea {
+    margin-left: 0 !important;
+  }
+
+  label {
+    max-width: 10rem;
+  }
+
+  #rangevalue {
+    width: 15% !important;
+    margin: 0 !important;
+  }
+  .normal {
+    display: none;
+  }
+  .cel {
+    display: block !important;
   }
 }
