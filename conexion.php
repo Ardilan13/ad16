@@ -7,6 +7,7 @@ function conectar()
     $ip = "localhost";
     $bd = "ad16";
     $port = "3306";
+    
 
     $conexion = new mysqli($ip, $usuario, $contra, $bd, $port);
 
